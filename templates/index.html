@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Student Attendance System{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h2>Automated Student Attendance System</h2>
+    <p>Using YOLOv8 Face Detection & Recognition</p>
+    <div class="cta-buttons">
+        <a href="{{ url_for('register') }}" class="btn btn-primary">Register Student</a>
+        <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">View Dashboard</a>
+    </div>
+</div>
+
+<section class="features">
+    <h3>Features</h3>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h4>🎯 Real-time Detection</h4>
+            <p>YOLOv8 powered face detection for accurate student identification</p>
+        </div>
+        <div class="feature-card">
+            <h4>📋 Attendance Tracking</h4>
+            <p>Automatic attendance logging with timestamp and confidence scores</p>
+        </div>
+        <div class="feature-card">
+            <h4>📊 Analytics Dashboard</h4>
+            <p>Comprehensive attendance reports and statistics</p>
+        </div>
+        <div class="feature-card">
+            <h4>📦 CSV Export</h4>
+            <p>Export attendance records in standard CSV format</p>
+        </div>
+    </div>
+</section>
+
+<section class="info">
+    <h3>How It Works</h3>
+    <ol>
+        <li>Register students with their face photos</li>
+        <li>System creates unique face encodings for each student</li>
+        <li>Upload attendance images - system detects and identifies faces</li>
+        <li>Attendance is automatically marked with confidence scores</li>
+        <li>View analytics and export reports</li>
+    </ol>
+</section>
+{% endblock %}
