@@ -61,6 +61,7 @@ git checkout student-attendance-yolo
 
 2. Create virtual environment
 ```bash
+apt install python3.12-venv -y
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
